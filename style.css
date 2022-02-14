@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    
+}
+
+.heading{
+    text-align: center;
+    margin: 20px 0px;
+    padding-top: 10px;
+}
+.main_container{
+    height: 95vh;
+    width: 90vw;
+    margin: 0px auto;
+    background-color: rgb(36, 39, 39);
+    border-radius: 20px;
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(34, 70, 45, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 20px 25px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+p{
+    padding: 10px;
+
+}
+.border{
+    /* border: 1px solid black; */
+}
+
+.wrapper{
+   display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}
+.c-video{
+    position: relative;
+    overflow: hidden;
+}
+
+.sub{
+    border-radius: 10px;
+}
+.video{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.c-video:hover .controls{
+    transform: translateY(0);
+    transition: all .2s;
+}
+
+.controls{
+    display: flex;
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    
+    /* transform: translateY(100%); */
+}
+.buttons{
+    padding: 7px;
+}
+.buttons button{    
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.buttons button::before{
+    content: '\f28b';
+    font-family: 'Font Awesome 5 free';
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    font-size: 28px;
+    color: #fff;
+}
+
+.buttons button.play::before{
+    content: '\f28b';
+}
+.buttons button.play::before{
+    content: '\f144';
+}
+
+.fast{
+    background-color: rgb(36, 39, 39);
+    border: none;
+    outline: none;
+}
+
+.fast:hover{
+    cursor: pointer;
+    
+}
+
+.list{
+    text-align: center;
+    margin: 15px;
+    color: rgb(19, 18, 18);
+    font-weight: bold;
+}
+
+.list_container{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(34, 70, 45, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 20px 25px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+    width: 23%;
+    background-color: #823be6;
+    padding: 20px 0px;
+}
+.videotag{
+    position: relative;
+    top: 0;
+    bottom: 1vw;
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+
+.sub{
+    margin-top: 5px;    
+}
